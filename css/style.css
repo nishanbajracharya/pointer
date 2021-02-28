@@ -1,0 +1,13 @@
+* {
+  --icon-color: #fff;
+  --background-color: #000;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-color);
+}
+
+.icon {
+  color: var(--icon-color);
+}
