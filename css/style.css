@@ -9,5 +9,11 @@ body {
 }
 
 .icon {
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  cursor: default;
+  font-size: 100px;
   color: var(--icon-color);
+  transform: translate(-50%, -50%) rotate(45deg) scale(0.3);
 }

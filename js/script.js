@@ -1,6 +1,16 @@
 // Listen to mousemove event
 function track(event) {
-  console.log(event.clientX, event.clientY);
+  const x = event.clientX;
+  const y = event.clientY;
+
+  const pointer = new Pointer();
+
+  const distance = pointer.getDistance(x, y);
+
+  pointer.setScaleFromDistance(distance);
+  pointer.setRotationFromPosition({ x, y });
+
+  pointer.render();
 }
 
 // Initialize script
