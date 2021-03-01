@@ -1,9 +1,7 @@
 // Listen to mousemove event
-function track(event) {
+function track(event, pointer) {
   const x = event.clientX;
   const y = event.clientY;
-
-  const pointer = new Pointer();
 
   const distance = pointer.getDistance(x, y);
 
@@ -15,7 +13,9 @@ function track(event) {
 
 // Initialize script
 function init(track) {
-  window.addEventListener('mousemove', track);
+  const pointer = new Pointer();
+
+  window.addEventListener('mousemove', event => track(event, pointer));
 }
 
 init(track);
