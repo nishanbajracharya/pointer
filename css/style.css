@@ -13,7 +13,7 @@ body {
   left: 50%;
   position: fixed;
   cursor: default;
-  font-size: 100px;
+  font-size: 200px;
   color: var(--icon-color);
   transform: translate(-50%, -50%) rotate(45deg) scale(0.3);
 }
